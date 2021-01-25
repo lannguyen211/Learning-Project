@@ -1,0 +1,266 @@
+/*Start reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol,
+ul {
+   list-style: none;
+}
+blockquote,
+q {
+   quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+/*End of reset*/
+
+@font-face {
+   font-family: myfont;
+   src: url(fonts/FontsFree-Net-HelveticaNeueLTMedium2.ttf);
+}
+
+@font-face {
+   font-family: italicfont;
+   src: url(fonts/FontsFree-Net-ww1-1.ttf);
+}
+
+.top-text,
+#container p,
+#container a,
+.btn1,
+button {
+   font-family: italicfont;
+}
+
+.top-text span {
+   font-family: italicfont;
+}
+
+#container {
+   max-width: 320px;
+   margin: 100px auto;
+   color: #858585;
+}
+
+.top-text {
+   background: #424242;
+   color: #fff;
+   padding: 20px;
+   text-align: center;
+   border-radius: 5px;
+   position: relative;
+   margin-bottom: 15px;
+}
+
+.top-text::before {
+   content: "";
+   position: absolute;
+   top: 215%;
+   margin: -65px;
+   right: 100px;
+   border: 10px solid transparent;
+   border-top-color: #424242;
+   z-index: 1;
+}
+
+.progress-bar {
+   height: 10px;
+   border: 1px solid #858585;
+}
+
+.progress-bar > .bar-80 {
+   float: left;
+   width: 230px;
+   height: 10px;
+   background: #ef5f3c;
+}
+
+.progress-bar > .bar-20 {
+   float: left;
+   width: 88px;
+   height: 10px;
+   background: #fafafa;
+}
+
+.content {
+   border: 1px solid #858585;
+   border-top: none;
+   padding: 20px;
+}
+
+.content p:first-child {
+   margin-bottom: 15px;
+}
+
+.content p:nth-child(2) {
+   margin-bottom: 10px;
+}
+
+.input {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+}
+
+.link a {
+   text-decoration: none;
+   color: #20a1d4;
+}
+
+.input input[type="text"] {
+   font-weight: bold;
+   height: 40px;
+   width: 120px;
+   border: 1px solid #858585;
+   border-radius: 5px;
+   font-size: 20px;
+}
+
+.input .the-input {
+   color: #858585;
+}
+
+button {
+   border-style: none;
+}
+
+.btn1 {
+   color: #fff;
+   background: #1cbc2c;
+   padding: 10px;
+   height: 45px;
+   border-radius: 5px;
+   width: 130px;
+   font-size: 20px;
+}
+
+.link {
+   font-weight: lighter;
+}
+
+.button-container {
+   max-width: 320px;
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.button-container .btn2 {
+   padding: 10px;
+   border-radius: 5px;
+   background: #fafafa;
+   border: 1px solid #858585;
+   color: #858585;
+   font-weight: bold;
+   width: 150px;
+}
